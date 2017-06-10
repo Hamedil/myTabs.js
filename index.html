@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>myTabs.js :: a simple and powerful jQuery tabs plugin - by @hamedil</title>
+    <meta name="description"
+          content="myTabs.js a very simple jQuery plugin for adding tabs functionality to your website"/>
+    <meta name="keywords"
+          content="jQuery, JavaScript, tabs, plugin, js, simple, myTabs, myTabs.js"/>
+    <meta name="author" content="hamedadil.com"/>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+<body>
+<section id='main' >
+    <header>
+        <h1>myTabs.js</h1>
+        <p>a very simple jQuery plugin for adding tabs functionality to your website</p>
+        <small>by <a href="http://twitter.com/ham3dil">@ham3dil</a> - <a href="http://www.hamedadil.com">hamedadil.com</a></small>
+    </header>
+	<div class="container">
+		<div class="row">
+			<aside class="col-md-3 col-xs-12">
+				<ul class="myTabs">
+					<li><a data-switch="settings" class="myTabs_switch default" href="#settings">Account Settings</a></li>
+					<li><a data-switch="contents" class="myTabs_switch" href="#contents">Contents</a></li>
+					<li><a data-switch="notifications" class="myTabs_switch" href="#notifications">Notifications</a></li>
+					<li><a data-switch="orders" class="myTabs_switch" href="#orders">Orders</a></li>
+					<li><a data-switch="messages" class="myTabs_switch" href="#messages">Messages</a></li>
+				</ul>
+			</aside>
+			<div class="col-md-9 col-xs-12">
+				<div class="myTabs_container">
+					<div class="myTabs_contents tabs-container" data-contents="settings">
+						<h4>Account Settings</h4>
+						<hr>
+                        <div>Account tab's stuff goes here !</div>
+						<div>Account Username</div>
+						<div>Account Email Address</div>
+					</div>
+					<div class="myTabs_contents tabs-container" data-contents="contents">
+						<h4>Contents</h4>
+						<hr>
+						<div>Contents tab's stuff goes here !</div>
+						<div>my other contents</div>
+						<div>Something else here !</div>
+					</div>
+
+					<div class="myTabs_contents tabs-container" data-contents="orders">
+						<h4>Orders</h4>
+						<hr>
+						<div>Orders tab's stuff goes here !</div>
+						<div>Some other orders stuff ..</div>
+                        <div>Something else</div>
+                        <div>Something else 2</div>
+
+					</div>
+
+					<div class="myTabs_contents tabs-container" data-contents="notifications">
+						<h4>Notifications</h4>
+						<hr>
+                        <div>You have many notifications here !</div>
+                        <div>More notifications !</div>
+                        <div>Blah blah blah</div>
+
+					</div>
+
+					<div class="myTabs_contents tabs-container" data-contents="messages">
+						<h4>Messages</h4>
+						<hr>
+						<div>Inbox</div>
+						<div>0utbox</div>
+					</div>
+
+                    <!-- You can add as many as you want of tabs, Just make sure that
+                    data-contents & data-switch have the same value -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/mytabs.js"></script>
+<script>
+$('#myTabs_container').myTabs('index');
+</script>
+</body>
+</html>
