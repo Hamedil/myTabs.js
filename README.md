@@ -47,7 +47,7 @@ $('#myTabs_container').myTabs('mypage');
 Same thing goes for the descendant pages:-<br>
 For: example.com/mypage/mychildpage , use:- <br>
 ````````
-$('#myTabs_container').myTabs(mychildpage);
+$('#myTabs_container').myTabs('mychildpage');
 ````````
 And so on ..<br>
 
